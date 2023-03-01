@@ -4,7 +4,7 @@ class ConsumerConan(ConanFile):
     name = "consumer"
     version = "0.1"
     settings = "os", "compiler", "build_type", "arch"
-    python_requires = "mytools/0.1@user/testing"
+    python_requires = "mytools/0.1@craigc/testing"
 
     def build(self):
         mytools = self.python_requires["mytools"].module
